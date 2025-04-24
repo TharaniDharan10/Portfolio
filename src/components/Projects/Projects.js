@@ -25,10 +25,11 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="E Wallet"
+              description="Developed a scalable microservice-based e-wallet system using Spring Boot, MySQL, Kafka, and Gradle-Kotlin.It enables real-time transactions and notifications.
+               Built four core services—User, Wallet, Transaction, and Notification—integrated with Kafka for efficient inter-service communication"
+              ghLink="https://github.com/TharaniDharan10/E_Wallet"
+              demoLink="https://github.com/TharaniDharan10/E_Wallet"
             />
           </Col>
 
@@ -36,10 +37,10 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Library Management System"
+              description="Built a secure and efficient monolithic Library Management System using Spring Boot, MySQL, Redis, and Maven, supporting book borrowing, returns, and fine collection. Integrated Spring Security for authentication, Redis for caching, and tested with Mockito to ensure reliability and performance."
+              ghLink="https://github.com/TharaniDharan10/Library_Management_System"
+              demoLink="https://github.com/TharaniDharan10/Library_Management_System"
             />
           </Col>
 
@@ -47,14 +48,14 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Tinder AI"
+              description="Developed an AI-powered Tinder-like platform using Spring Boot, MongoDB, Llama, and React, enabling swipe-based matchmaking and real-time chat. Integrated Llama for gender-specific, context-aware conversations, delivering a dynamic and engaging user experience."
+              ghLink="https://github.com/TharaniDharan10/tinder-ai-backend"
+              demoLink="https://github.com/TharaniDharan10/tinder-ai-frontend"              
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -86,7 +87,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
