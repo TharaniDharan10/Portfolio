@@ -4,7 +4,6 @@ import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -29,26 +28,16 @@ function Home2() {
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                {" "}
-                <b className="purple">
-                  Exploring more about Technologies.
-                </b>
+                <b className="purple">Web Technologies and Products </b> and{" "}
+                <b className="purple">Exploring more about Technologies.</b>
               </i>
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
               with <b className="purple">Java</b> and
               <i>
-                <b className="purple">
-                  {" "}
-                  SpringBoot
-                </b>
+                <b className="purple"> SpringBoot</b>
               </i>
-              &nbsp; 
-              {/* <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -74,8 +63,6 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-              
-            
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/tharanidharan-s/"
@@ -103,4 +90,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

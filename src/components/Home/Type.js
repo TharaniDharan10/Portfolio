@@ -9,7 +9,7 @@ function Type() {
           "Software Developer",
           "Full Stack Web Developer",
           "Tech Enthusiast",
-          "Tech Contributer",
+          "Tech Contributor", // ✅ corrected spelling
         ],
         autoStart: true,
         loop: true,
