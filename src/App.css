@@ -53,3 +53,38 @@ html, body {
     transform: rotate(360deg);
   }
 }
+
+
+.project-section {
+  margin-top: 2rem;
+}
+
+.project-heading {
+  margin-bottom: 1.5rem;
+}
+
+.project-item {
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  background-color: #1a1a1a; /* Dark background for tiles */
+}
+
+.project-item:hover {
+  transform: translateY(-10px); /* Slight upward shift */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.project-item h4 {
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  color: #e0e0e0; /* Light grey for the text */
+}
+
+.purple {
+  color: purple;
+}

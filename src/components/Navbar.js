@@ -9,6 +9,7 @@ import { CgGitFork } from "react-icons/cg";
 import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { MdOutlineCastForEducation } from "react-icons/md";
+import { FaGraduationCap } from "react-icons/fa";  // Graduation cap icon
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -67,10 +68,18 @@ function NavBar() {
             </Nav.Item>
             
             <Nav.Item>
-  <Nav.Link as={Link} to="/training" onClick={() => updateExpanded(false)}>
-    <MdOutlineCastForEducation style={{ marginBottom: "2px" }} /> Training
-  </Nav.Link>
-</Nav.Item>
+              <Nav.Link as={Link} to="/training" onClick={() => updateExpanded(false)}>
+                <MdOutlineCastForEducation style={{ marginBottom: "2px" }} /> Training
+              </Nav.Link>
+            </Nav.Item>
+
+              <Nav.Item>
+                <Nav.Link as={Link} to="/education">
+                  <FaGraduationCap style={{ marginRight: "8px" }} /> 
+                  Education
+                </Nav.Link>
+              </Nav.Item>
+
 
 
             <Nav.Item className="fork-btn">
