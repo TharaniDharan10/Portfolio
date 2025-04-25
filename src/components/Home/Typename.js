@@ -1,22 +1,19 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
-function Type() {
+function Typename() {
   return (
     <Typewriter
       options={{
         strings: [
-          "Software Developer",
-          "Full Stack Web Developer",
-          "Tech Enthusiast",
-          "Tech Contributor", 
+          "I am Tharani Dharan"
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 90,
       }}
     />
   );
 }
 
-export default Type;
+export default Typename;

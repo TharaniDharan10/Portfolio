@@ -4,6 +4,7 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Typename from "./Typename";
 
 function Home() {
   return (
@@ -20,10 +21,11 @@ function Home() {
                 </span>
               </h1>
 
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> THARANI DHARAN</strong>
-              </h1>
+
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Typename />
+              </div>
+              
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />

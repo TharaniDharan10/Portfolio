@@ -14,7 +14,8 @@ function Platforms() {
       <Row className="justify-content-center">
         <Col md={12}>
           <h1 className="section-heading text-center mt-4">
-            <strong className="purple">My</strong> Platforms
+            <br></br>
+            <strong className="purple">My Platforms</strong> 
           </h1>
         </Col>
       </Row>
