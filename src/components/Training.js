@@ -61,15 +61,7 @@ function Training() {
   View on GitHub
 </a>
 
-      {/* <Button
-        variant="dark"
-        href="https://github.com/TharaniDharan10/false-alarm-detector"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ marginTop: "1rem" }}
-      >
-        View on GitHub
-      </Button> */}
+     
     </Container>
   );
 }
