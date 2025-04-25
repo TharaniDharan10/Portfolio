@@ -7,8 +7,8 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import ContactMe from "./components/ContactMe"; // Import ContactMe component
-// import Certifications from "./Certifications";
 import Certifications from './components/Certifications';  // If it's in src/components
+import Training from "./components/Training";
 
 import {
   BrowserRouter as Router,
@@ -44,6 +44,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<ContactMe />} />
+          
+          <Route path="/training" element={<Training />} />
           <Route path="/certifications" element={<Certifications />} /> {/* Add Certifications route here */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
