@@ -17,12 +17,20 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank" rel="noreferrer">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
 
-        {!props.isBlog && props.demoLink && (
+        {props.ghLink && (
+          <Button variant="primary" href={props.ghLink} target="_blank" rel="noreferrer">
+            {props.type === "certificate" ? (
+              <>View Certificate</>
+            ) : (
+              <>
+                <BsGithub /> &nbsp;GitHub
+              </>
+            )}
+          </Button>
+        )}
+
+        {props.demoLink && props.type !== "certificate" && (
           <Button
             variant="primary"
             href={props.demoLink}
