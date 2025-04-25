@@ -10,7 +10,7 @@ import ContactMe from "./components/ContactMe"; // Import ContactMe component
 import Certifications from './components/Certifications';  // If it's in src/components
 import Training from "./components/Training";
 import Education from "./components/Education";
-
+import Platforms from "./components/Platforms";
 import {
   BrowserRouter as Router,
   Route,
@@ -50,6 +50,7 @@ function App() {
               <Route path="/training" element={<Training />} />
               <Route path="/certifications" element={<Certifications />} />
               <Route path="/education" element={<Education />} />
+              <Route path="/platforms" element={<Platforms />} />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </main>

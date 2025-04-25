@@ -10,6 +10,7 @@ import { AiFillStar, AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser
 import { CgFileDocument } from "react-icons/cg";
 import { MdOutlineCastForEducation } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa";  // Graduation cap icon
+import { FaCode } from "react-icons/fa"; // Add this line to import the FaCode icon
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -66,6 +67,13 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Certifications
               </Nav.Link>
             </Nav.Item>
+
+            <Nav.Item>
+            <Nav.Link as={Link} to="/platforms">
+              <FaCode style={{ marginRight: "8px" }} />
+              Platforms
+            </Nav.Link>
+          </Nav.Item>
             
             <Nav.Item>
               <Nav.Link as={Link} to="/training" onClick={() => updateExpanded(false)}>
