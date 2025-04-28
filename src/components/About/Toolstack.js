@@ -7,25 +7,27 @@ import {
   SiMongodb,
   SiMysql,
 } from "react-icons/si";
+import "./Techstack.css"; // Assuming you already have CSS from before
 
 function Toolstack() {
+  const tools = [
+    { icon: <SiVisualstudiocode />, name: "VS Code" },
+    { icon: <SiIntellijidea />, name: "IntelliJ IDEA" },
+    { icon: <SiPostman />, name: "Postman" },
+    { icon: <SiMysql />, name: "MySQL Terminal" },
+    { icon: <SiMongodb />, name: "MongoDB Compass" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode title="VS Code" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiIntellijidea title="IntelliJ IDEA" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman title="Postman" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql title="MySQL Terminal" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMongodb title="MongoDB Compass" />
-      </Col>
+      {tools.map((tool, index) => (
+        <Col xs={4} md={2} className="tech-icons" key={index}>
+          <div className="icon-wrapper">
+            {tool.icon}
+            <p>{tool.name}</p>
+          </div>
+        </Col>
+      ))}
     </Row>
   );
 }
