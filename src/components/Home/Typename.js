@@ -10,7 +10,7 @@ function Typename() {
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 90,
+        deleteSpeed: 60,
       }}
     />
   );

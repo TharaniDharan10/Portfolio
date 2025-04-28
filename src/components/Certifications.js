@@ -11,10 +11,10 @@ function Certifications() {
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading">
-          My <strong className="purple">Certifications</strong>
+          My <strong className="purple">Certificates</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are some certifications I've earned recently.
+          Here are some certificates I've earned recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {/* Displaying certifications using ProjectCard component */}

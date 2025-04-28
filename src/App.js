@@ -6,17 +6,13 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import ContactMe from "./components/ContactMe"; // Import ContactMe component
-import Certifications from './components/Certifications';  // If it's in src/components
+import ContactMe from "./components/ContactMe";
+import Certifications from './components/Certifications';
 import Training from "./components/Training";
 import Education from "./components/Education";
 import Platforms from "./components/Platforms";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
+import Skills from "./components/Skills";  // Import Skills component
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
@@ -51,6 +47,7 @@ function App() {
               <Route path="/certifications" element={<Certifications />} />
               <Route path="/education" element={<Education />} />
               <Route path="/platforms" element={<Platforms />} />
+              <Route path="/skills" element={<Skills />} />  {/* Add Skills route */}
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
           </main>
@@ -59,7 +56,6 @@ function App() {
       </div>
     </Router>
   );
-  
 }
 
 export default App;

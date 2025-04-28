@@ -20,8 +20,10 @@ function ProjectCards(props) {
 
         {props.ghLink && (
           <Button variant="primary" href={props.ghLink} target="_blank" rel="noreferrer">
-            {props.type === "certificate" ? (
-              <>View Certificate</>
+            {props.type === "platform" ? (
+              <>Profile</> // Changed to Profile for platform links
+            ) : props.type === "certificate" ? (
+              <>View Certificate</> // Keep "View Certificate" for certificates
             ) : (
               <>
                 <BsGithub /> &nbsp;GitHub

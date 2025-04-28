@@ -1,0 +1,37 @@
+.platform-card {
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #573955;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.platform-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.platform-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.platform-tile {
+  text-decoration: none;
+  color: inherit;
+}
+
+.platform-username {
+  font-size: 14px;
+  color: gray;
+}
+
+.platform-link {
+  font-size: 14px;
+  color: #6c63ff; /* Purple */
+  margin-top: 5px;
+}
