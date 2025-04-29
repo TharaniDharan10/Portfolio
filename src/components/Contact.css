@@ -1,0 +1,129 @@
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* background: #716d73; Purple */
+    min-height: 100vh;
+  }
+  
+  .contact__left {
+    padding: 3rem;
+    /* background: #130F1A; Purple */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  
+  .contact__right {
+    /* background: rgba(208, 74, 212, 0.6); Transparent black overlay */
+    padding: 3rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .section__title-2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .highlight {
+    background: #d81a8c;
+    padding: 0 0.5rem;
+  }
+  
+  .contact__description-1,
+  .contact__description-2 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .geometric-box {
+    width: 25px;
+    height: 25px;
+    background-color: #00cfd5;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  
+  .contact__right {
+    background: #000;
+    padding: 3rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .contact__form input,
+  .contact__form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    border: 1px solid #555;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .contact__form textarea {
+    min-height: 150px;
+  }
+  
+  .contact__button {
+    background: #00cfd5;
+    color: #000;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .contact__button:hover {
+    background: #00b8c3;
+  }
+  
+  /* Social links */
+  .contact__social {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  
+  .contact__social-arrow {
+    height: 40px;
+  }
+  
+  .contact__social-links a {
+    font-size: 1.8rem;
+    margin-right: 0.8rem;
+    color: #000;
+    background: #dcdcdc;
+    padding: 0.4rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+ 
+.contact__social-links a:hover {
+    background: #00cfd5;
+    color: #000;
+  }
