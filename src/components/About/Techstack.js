@@ -1,9 +1,34 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiJavascript1, DiJava, DiReact, DiGit, DiMongodb } from "react-icons/di";
-import { FaHtml5, FaCss3Alt, FaGithub, FaDocker, FaRobot } from "react-icons/fa";
-import { SiSpringboot, SiTailwindcss, SiMysql } from "react-icons/si";
-import "./Techstack.css"; // <- We'll use a small CSS file
+import {
+  DiJavascript1,
+  DiJava,
+  DiReact,
+  DiGit,
+  DiMongodb,
+} from "react-icons/di";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaGithub,
+  FaDocker,
+  FaRobot,
+  FaAws,
+  FaFigma,
+} from "react-icons/fa";
+import {
+  SiSpringboot,
+  SiTailwindcss,
+  SiMysql,
+  SiApachekafka,
+  SiKubernetes,
+  SiTerraform,
+  SiRedis,
+  SiNginx,
+} from "react-icons/si";
+import { TbWorldWww } from "react-icons/tb"; // For HTTP
+import { MdSecurity } from "react-icons/md"; // Optional, for security/testing placeholder
+import "./Techstack.css";
 
 function Techstack() {
   const techs = [
@@ -16,10 +41,19 @@ function Techstack() {
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <SiMysql />, name: "MySQL" },
     { icon: <DiMongodb />, name: "MongoDB" },
+    { icon: <SiRedis />, name: "Redis" },
+    { icon: <SiApachekafka />, name: "Kafka" },
     { icon: <DiGit />, name: "Git" },
     { icon: <FaGithub />, name: "GitHub" },
     { icon: <FaDocker />, name: "Docker" },
+    { icon: <SiKubernetes />, name: "Kubernetes" },
+    { icon: <FaAws />, name: "AWS" },
+    { icon: <SiTerraform />, name: "Terraform" },
+    { icon: <FaFigma />, name: "Figma" },
+    { icon: <SiNginx />, name: "Nginx" },
+    { icon: <TbWorldWww />, name: "HTTP" },
     { icon: <FaRobot />, name: "Ollama" },
+    { icon: <MdSecurity />, name: "Mockito" }, // Placeholder icon for Mockito
   ];
 
   return (

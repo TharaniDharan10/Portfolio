@@ -9,7 +9,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { MdOutlineCastForEducation } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa";  // Graduation cap icon
 import { FaCode } from "react-icons/fa"; // Add this line to import the FaCode icon
-import { FiMail} from "react-icons/fi";
+// import { FiMail} from "react-icons/fi";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -96,11 +96,11 @@ function NavBar() {
               </Nav.Item>
 
               
-              <Nav.Item>
+              {/* <Nav.Item>
   <Nav.Link as={Link} to="/contact" onClick={() => updateExpanded(false)}>
     <FiMail style={{ marginBottom: "2px" }} /> Contact
   </Nav.Link>
-</Nav.Item>
+</Nav.Item> */}
 
 
           </Nav>
