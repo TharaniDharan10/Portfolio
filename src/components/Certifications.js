@@ -22,6 +22,17 @@ function Certifications() {
             <ProjectCard
               imgPath={cert1}
               isBlog={false}
+              title="Solutions Architecture - AWS"
+              description="Completed basic Architecture in Cloud."
+              ghLink="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_YnBgYoNpEf5iKbis9_1753196575165_completion_certificate.pdf" // Replace with actual certificate link
+              type="certificate"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cert1}
+              isBlog={false}
               title="Cloud Computing - NPTEl"
               description="Completed basics of Cloud."
               ghLink="https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs118/Course/NPTEL24CS118S167020267604432672.pdf" // Replace with actual certificate link
