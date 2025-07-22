@@ -2,9 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./Projects/ProjectCards"; // Assuming you already have this for displaying the cards
 import cert1 from "../Assets/certificates/Cloud.png"; // Replace with your certification images
-import cert2 from "../Assets/certificates/JPMorgan.png"; // Replace with your certification images
-import cert3 from "../Assets/certificates/Java.png";
-import cert4 from "../Assets/certificates/IBM.png";
+import cert2 from "../Assets/certificates/Solutions_Architecutre.png"
+import cert3 from "../Assets/certificates/JPMorgan.png"; // Replace with your certification images
+import cert4 from "../Assets/certificates/Java.png";
+import cert5 from "../Assets/certificates/IBM.png";
+
 
 function Certifications() {
   return (
@@ -18,16 +20,7 @@ function Certifications() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {/* Displaying certifications using ProjectCard component */}
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={cert1}
-              isBlog={false}
-              title="Solutions Architecture - AWS"
-              description="Completed basic Architecture in Cloud."
-              ghLink="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_YnBgYoNpEf5iKbis9_1753196575165_completion_certificate.pdf" // Replace with actual certificate link
-              type="certificate"
-            />
-          </Col>
+         
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -40,9 +33,20 @@ function Certifications() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={cert2}
+              isBlog={false}
+              title="Solutions Architecture - AWS"
+              description="Completed basic Architecture in Cloud."
+              ghLink="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_YnBgYoNpEf5iKbis9_1753196575165_completion_certificate.pdf" // Replace with actual certificate link
+              type="certificate"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={cert3}
               isBlog={false}
               title="Agile Job Simulation – JP Morgan Chase"
               description="Completed hands-on Agile simulation."
@@ -53,7 +57,7 @@ function Certifications() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={cert3}
+              imgPath={cert4}
               isBlog={false}
               title="Java Backend Development – GeeksforGeeks"
               description="Backend development using Java and Spring Boot."
@@ -64,7 +68,7 @@ function Certifications() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={cert4}
+              imgPath={cert5}
               isBlog={false}
               title="Introduction to Web Development – IBM"
               description="Learned HTML, CSS, and JavaScript for web development."
