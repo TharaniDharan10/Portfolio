@@ -71,7 +71,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link as={Link} to="/certifications" onClick={() => updateExpanded(false)}>
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Certificates
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Certifications
               </Nav.Link>
             </Nav.Item>
 

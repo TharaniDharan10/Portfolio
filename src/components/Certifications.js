@@ -6,17 +6,56 @@ import cert2 from "../Assets/certificates/Solutions_Architecutre.png"
 import cert3 from "../Assets/certificates/JPMorgan.png"; // Replace with your certification images
 import cert4 from "../Assets/certificates/Java.png";
 import cert5 from "../Assets/certificates/IBM.png";
+import certification1 from "../Assets/certifications/Oracle_Associate.png";
+import certification2 from "../Assets/certifications/Oracle_Professional.png";
 
 
 function Certifications() {
   return (
     <Container fluid className="project-section">
+
+      <Container>
+        <h1 className="project-heading">
+          My <strong className="purple">Certifications</strong>
+        </h1>
+        <p style={{ color: "white" }}>
+          Here are some Certifications that <strong className="purple">I earned</strong>
+        </p>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {/* Displaying certifications using ProjectCard component */}
+         
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={certification1}
+              isBlog={false}
+              title="Oracle Cloud Infrastructure 2025 Certified Architect Associate"
+              description="Worked with Cloud as a whole."
+              ghLink="https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC7481308&trackId=OCI25CAA&key=3a31d00698bff399606916ce21aa83a81b55afb6" // Replace with actual certificate link
+              type="certificate"
+            />
+          </Col>
+
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={certification2}
+              isBlog={false}
+              title="Oracle Cloud Infrastructure 2025 Certified Developer Professional"
+              description="Completed Professional Architecture in Cloud."
+              ghLink="https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC7481308&trackId=OCID25CP&key=ff59eff54daffe360c0186bd381876a77a254f69" // Replace with actual certificate link
+              type="certificate"
+            />
+          </Col>
+        </Row>
+      </Container>
+
+
       <Container>
         <h1 className="project-heading">
           My <strong className="purple">Certificates</strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are some certificates I've earned recently.
+          Here are some Certificates that<strong className="purple"> I Own</strong>
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {/* Displaying certifications using ProjectCard component */}

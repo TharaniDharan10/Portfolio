@@ -17,7 +17,7 @@ function Training() {
         
         </h3>
         <p style={{ color: "#e0e0e0", margin: 0 }}>
-          December ’24 – July'24
+          December ’24 – July'25
         </p>
       </div>
 
