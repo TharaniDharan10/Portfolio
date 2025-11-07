@@ -1,4 +1,4 @@
-.project-card-view {
+/* .project-card-view {
   background-color: #1e1e2f;
   border: none;
   border-radius: 15px;
@@ -22,4 +22,56 @@
 
 .justify-text {
   text-align: justify;
+} */
+
+
+.project-card-view {
+  background-color: #1e1e2f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  position: relative;           /* Added */
+  height: 100%;                 /* Ensures full card height for alignment */
+  display: flex;                /* Added */
+  flex-direction: column;       /* Stack content vertically */
+  justify-content: flex-start;  /* Keep content at top, button will stay fixed at bottom */
+  padding-bottom: 60px;         /* Give room for the bottom button */
+}
+
+.project-card-view:hover {
+  transform: translateY(-5px);
+}
+
+.project-description {
+  color: white;
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+/* ✅ New styles to center-align button at bottom */
+.project-card-view .btn {
+  position: absolute;
+  bottom: 15px;                /* Fixed distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;                  /* Optional – makes button neatly sized */
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Optional hover effect for modern look */
+.project-card-view .btn:hover {
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }

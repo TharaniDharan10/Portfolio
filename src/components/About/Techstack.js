@@ -25,9 +25,10 @@ import {
   SiTerraform,
   SiRedis,
   SiNginx,
+  SiDjango, // ✅ Added Django icon
 } from "react-icons/si";
-import { TbWorldWww } from "react-icons/tb"; // For HTTP
-import { MdSecurity } from "react-icons/md"; // Optional, for security/testing placeholder
+import { TbWorldWww } from "react-icons/tb";
+import { MdSecurity } from "react-icons/md";
 import "./Techstack.css";
 
 function Techstack() {
@@ -42,6 +43,7 @@ function Techstack() {
     { icon: <SiMysql />, name: "MySQL" },
     { icon: <DiMongodb />, name: "MongoDB" },
     { icon: <SiRedis />, name: "Redis" },
+    { icon: <SiDjango />, name: "Django" }, // ✅ Added Django
     { icon: <SiApachekafka />, name: "Kafka" },
     { icon: <DiGit />, name: "Git" },
     { icon: <FaGithub />, name: "GitHub" },
@@ -53,7 +55,7 @@ function Techstack() {
     { icon: <SiNginx />, name: "Nginx" },
     { icon: <TbWorldWww />, name: "HTTP" },
     { icon: <FaRobot />, name: "Ollama" },
-    { icon: <MdSecurity />, name: "Mockito" }, // Placeholder icon for Mockito
+    { icon: <MdSecurity />, name: "Mockito" },
   ];
 
   return (
